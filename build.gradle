@@ -25,3 +25,8 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+task uploadApk(type: Exec) {
+    commandLine '../deploy.' + (System.properties['os.name'].toLowerCase().contains('windows') ? 'bat' : 'sh')
+    args project.name
+}

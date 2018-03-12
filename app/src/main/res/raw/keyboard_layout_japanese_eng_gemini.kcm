@@ -1,4 +1,4 @@
-# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,19 +13,12 @@
 # limitations under the License.
 
 #
-# English (UK) keyboard layout.
-# Unlike the default (generic) keyboard layout, English (US) does not contain any
-# special ALT characters.
-#
-#
-# Custom by tesuri
-# Fn + E to BACK
+# Japanese 109-key keyboard layout.
 #
 
 type OVERLAY
 
-# CUSTOM_NAME E to SLASH
-map key 18 SLASH 
+map key 100 ZENKAKU_HANKAKU
 
 ### ROW 1
 
@@ -39,83 +32,73 @@ key 1 {
     label:                              '1'
     base:                               '1'
     shift:                              '!'
-    fn:			                		'~'
-    alt:                               '\u00a1'
-    alt+shift:                         '\u00b9'
+    fn:                                 '|'
 }
 
 key 2 {
     label:                              '2'
     base:                               '2'
-    shift:                              '@'
-    fn:				                	'`'
-    alt:                               '\u00b2'
+    shift:                              '"'
+    fn:                                 '`'
 }
 
 key 3 {
     label:                              '3'
     base:                               '3'
     shift:                              '#'
-    fn:			                		'\u00a3'
-    alt:                                '\u00b3'
+    fn:                                 '\\'
 }
 
 key 4 {
     label:                              '4'
     base:                               '4'
     shift:                              '$'
-    fn:		                			'\u20ac'
-    alt:                                '\u00a4'
-    alt+shift:                          '\u00a3'
+    fn:                                 '\u00A5'
 }
 
 key 5 {
     label:                              '5'
     base:                               '5'
     shift:                              '%'
-    fn:		                			'<'
-    alt:                                '\u20ac'
+    fn:                                 '<'
 }
 
 key 6 {
     label:                              '6'
     base:                               '6'
-    shift:                              '^'
-    alt+shift:                          '\u0302'
-    fn:				                	'>'
-    alt:                                '\u00bc'
+    shift:                              '&'
+    fn:                                 '>'
 }
 
 key 7 {
     label:                              '7'
     base:                               '7'
-    shift:                              '&'
-    fn:			                		'['
-    alt:                                '\u00bd'
+    shift:                              '\''
+    fn:                                 '['
+    fn+shift:                           '{'
 }
 
 key 8 {
     label:                              '8'
     base:                               '8'
-    shift:                              '*'
-    fn:			                		']'
-    alt:                                '\u00be'
+    shift:                              '('
+    fn:                                 ']'
+    fn+shift:                           '}'
 }
 
 key 9 {
     label:                              '9'
     base:                               '9'
-    shift:                              '('
-    fn:					                '{'
-    alt:                                '\u2018'
+    shift:                              ')'
+    fn:                                 '\u307B'
 }
 
 key 0 {
     label:                              '0'
     base:                               '0'
-    shift:                              ')'
-    fn:					                '}'
-    alt:                                '\u2019'
+    shift:                              '~'
+    fn:                                 '\u3078'
+    fn+shift:                           '\u30FC'
 }
 
 key DEL {
@@ -126,97 +109,67 @@ key DEL {
 ### ROW 2
 
 key Q {
-    label:                              'Q'
+    label:                              'q'
     base:                               'q'
     shift, capslock:                    'Q'
-    alt:                                '\u00e4'
-    shift+alt, capslock+alt:            '\u00c4'
 }
 
 key W {
-    label:                              'W'
+    label:                              'w'
     base:                               'w'
     shift, capslock:                    'W'
-    alt:                                '\u00e5'
-    shift+alt, capslock+alt:            '\u00c5'
-
 }
 
-#key E {
-#    label:                              'E'
-#    base:                               'e'
-#    shift, capslock:                    'E'
-#    fn:                                 fallback BACK
-#    alt:                                '\u00e9'
-#    shift+alt, capslock+alt:            '\u00c9'
-#}
-
-key SLASH {
-    label:                              'E'
+key E {
+    label:                              'e'
     base:                               'e'
     shift, capslock:                    'E'
-    fn:                                 fallback BACK
-    alt:                                '\u00e9'
-    shift+alt, capslock+alt:            '\u00c9'
 }
 
 key R {
-    label:                              'R'
+    label:                              'r'
     base:                               'r'
     shift, capslock:                    'R'
-    alt:                                '\u00ae'
 }
 
 key T {
-    label:                              'T'
+    label:                              't'
     base:                               't'
     shift, capslock:                    'T'
-    alt:                                '\u00fe'
-    shift+alt, capslock+alt:            '\u00de'
 }
 
 key Y {
-    label:                              'Y'
+    label:                              'y'
     base:                               'y'
     shift, capslock:                    'Y'
-    alt:                                '\u00fc'
-    shift+alt, capslock+alt:            '\u00dc'
+    fn:                                 '/'
 }
 
 key U {
-    label:                              'U'
+    label:                              'u'
     base:                               'u'
     shift, capslock:                    'U'
-    alt:                                '\u00fa'
-    shift+alt, capslock+alt:            '\u00da'
 }
 
 key I {
-    label:                              'I'
+    label:                              'i'
     base:                               'i'
     shift, capslock:                    'I'
-    fn:				                	'+'
-    alt:                                '\u00ed'
-    shift+alt, capslock+alt:            '\u00cd'
+    fn:                                 '='
 }
 
 key O {
-    label:                              'O'
+    label:                              'o'
     base:                               'o'
     shift, capslock:                    'O'
-    fn:				                	'-'
-    alt:                                '\u00f3'
-    shift+alt, capslock+alt:            '\u00d3'
-
+    fn:                                 '\u3099'
 }
 
 key P {
-    label:                              'P'
+    label:                              'p'
     base:                               'p'
     shift, capslock:                    'P'
-    fn:					                '='
-    alt:                                '\u00f6'
-    shift+alt, capslock+alt:            '\u00d6'
+    fn:                                 '\u309A'
 }
 
 key ENTER {
@@ -232,78 +185,67 @@ key TAB {
 }
 
 key A {
-    label:                              'A'
+    label:                              'a'
     base:                               'a'
     shift, capslock:                    'A'
-    alt:                                '\u00e1'
-    shift+alt, alt+capslock:            '\u00c1'
 }
 
 key S {
-    label:                              'S'
+    label:                              's'
     base:                               's'
     shift, capslock:                    'S'
-    alt:                                '\u00df'
-    shift+alt:                          '\u00a7'
-    fn:                                 fallback BACK
 }
 
 key D {
-    label:                              'D'
+    label:                              'd'
     base:                               'd'
     shift, capslock:                    'D'
-    alt:                                '\u00f0'
-    shift+alt, capslock+alt:            '\u00d0'
 }
 
 key F {
-    label:                              'F'
+    label:                              'f'
     base:                               'f'
     shift, capslock:                    'F'
 }
 
 key G {
-    label:                              'G'
+    label:                              'g'
     base:                               'g'
     shift, capslock:                    'G'
 }
 
 key H {
-    label:                              'H'
+    label:                              'h'
     base:                               'h'
     shift, capslock:                    'H'
+    fn:                                 '_'
 }
 
 key J {
-    label:                              'J'
+    label:                              'j'
     base:                               'j'
     shift, capslock:                    'J'
-    fn:					                '_'
+    fn:                                 '@'
 }
 
 key K {
-    label:                              'K'
+    label:                              'k'
     base:                               'k'
     shift, capslock:                    'K'
-    fn:					                ';'
+    fn:                                 '?'
 }
 
 key L {
-    label:                              'L'
+    label:                              'l'
     base:                               'l'
     shift, capslock:                    'L'
-    fn:				                	'"'
-    alt:                                '\u00f8'
-    shift+alt, capslock+alt:            '\u00d8'
+    fn:                                 ';'
 }
 
 key APOSTROPHE {
-    label:                              '\\'
-    base:                               '\\'
-    shift:                              '|'
-    fn:				                	':'
-    alt:                                '\u00ac'
-    shift+alt:                          '\u00a6'
+    label:                              ':'
+    base:                               ':'
+    shift:                              '*'
 }
 
 ### ROW 4
@@ -312,60 +254,54 @@ key APOSTROPHE {
 #}
 
 key Z {
-    label:                              'Z'
+    label:                              'z'
     base:                               'z'
     shift, capslock:                    'Z'
-    alt:                                '\u00e6'
-    shift+alt, capslock+alt:            '\u00c6'
-
+    fn:                                 '^'
 }
 
 key X {
-    label:                              'X'
+    label:                              'x'
     base:                               'x'
     shift, capslock:                    'X'
 }
 
 key C {
-    label:                              'C'
+    label:                              'c'
     base:                               'c'
     shift, capslock:                    'C'
-    alt:                                '\u00a9'
-    shift+alt:                          '\u00a2'
 }
 
 key V {
-    label:                              'V'
+    label:                              'v'
     base:                               'v'
     shift, capslock:                    'V'
 }
 
 key B {
-    label:                              'B'
+    label:                              'b'
     base:                               'b'
     shift, capslock:                    'B'
 }
 
 key N {
-    label:                              'N'
+    label:                              'n'
     base:                               'n'
     shift, capslock:                    'N'
-    alt:                                '\u00f1'
-    shift+alt, capslock+alt:            '\u00d1'
 }
 
 key M {
-    label:                              'M'
+    label:                              'm'
     base:                               'm'
     shift, capslock:                    'M'
-    fn:				                	'\''
-    alt:                                '\u00b5'
+    fn:                                 '\u306C'
 }
 
 key PERIOD {
     label:                              '.'
     base:                               '.'
-    shift:                              '?'
+    shift:                              '+'
+    fn:                                 '\u308D'
 }
 
 key DPAD_UP {
@@ -398,9 +334,7 @@ key SPACE {
 key COMMA {
     label:                              ','
     base:                               ','
-    shift:                              '/'
-    alt:                                '\u00e7'
-    shift+alt, capslock+alt:            '\u00c7'
+    shift:                              '-'
 }
 
 key DPAD_LEFT {
@@ -417,4 +351,5 @@ key DPAD_RIGHT {
    base:		                		fallback DPAD_RIGHT
    fn:			                		fallback MOVE_END
 }
+
 

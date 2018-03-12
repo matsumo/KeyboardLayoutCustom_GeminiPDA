@@ -1,6 +1,6 @@
 *.iml
 .gradle
-/gradle
+#/gradle
 .DS_Store
 /local.properties
 /.idea
@@ -8,5 +8,6 @@ build
 release
 /captures
 .externalNativeBuild
-gradlew
-gradlew.bat
+#gradlew
+#gradlew.bat
+*.apk
