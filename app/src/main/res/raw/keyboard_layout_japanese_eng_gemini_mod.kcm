@@ -96,7 +96,7 @@ key 0 {
     label:                              '0'
     base:                               '0'
     shift:                              '~'
-    fn:                                 'u30FC'
+    fn:                                 '\u30FC'
 }
 
 key DEL {
@@ -161,6 +161,7 @@ key O {
     base:                               'o'
     shift, capslock:                    'O'
 }
+
 key P {
     label:                              'p'
     base:                               'p'
@@ -258,7 +259,7 @@ key Z {
 
 key X {
     label:                              'x'
-    base: 'x'
+    base:                               'x'
     shift, capslock:                    'X'
     fn:                                 fallback VOLUME_MUTE
 }
